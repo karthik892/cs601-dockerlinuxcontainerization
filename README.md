@@ -13,4 +13,4 @@ The goal of this assignment is to create a website hosted on GitHub pages that e
 
 ## Accessing the website
 
-The production version of this website can be accessed by going to https://karthik892.github.io/cs601-dockerlinuzcontainerization
+The production version of this website can be accessed by going to https://karthik892.github.io/cs601-dockerlinuxcontainerization
