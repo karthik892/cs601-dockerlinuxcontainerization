@@ -58,6 +58,7 @@
         </nav>
     </div>
 
+
     <div class="container pb-5">
         <div class="row pt-3 pb-3 px-4">
 
@@ -117,8 +118,55 @@
                     container make it another tool to streamline software development.
                 </p>
             </div>
+    <div class="container">
+       <div class="row">
+           <div class="col-12">
+               <h2>Containers vs Virtualization</h2>
+           </div>
+           <div class="col-12">
+            <p>In traditional virtualization, a hypervisor virtualizes physical hardware. The result is that each virtual machine contains a guest OS, a virtual copy of the hardware that the OS requires to run, and an application and its associated libraries and dependencies.</p>
+            <p>Instead of virtualizing the underlying hardware, containers virtualize the operating system (typically Linux) so each individual container contains only the application and its libraries and dependencies. Containers are small, fast, and portable because unlike a virtual machine, containers do not need to include a guest OS in every instance and can, instead, simply leverage the features and resources of the host OS.</p>
+            <p>Just like virtual machines, containers allow developers to improve CPU and memory utilization of physical machines. Containers go even further, however, because they also enable microservice architectures, where application components can be deployed and scaled more granularly. This is an attractive alternative to having to scale up an entire monolithic application because a single component is struggling with load.</p>
+           </div>
+           <div class="col-12">
+               <p><strong>Containers</strong> are typically measured by the megabyte. They don’t package anything bigger than an app and all the files necessary to run, and are often used to package single functions that perform specific tasks (known as a microservice). The lightweight nature of containers—and their shared operating system (OS)—makes them very easy to move across multiple environments.</p>
+               <p><strong>VMs</strong> are typically measured by the gigabyte. They usually contain their own OS, allowing them to perform multiple resource-intensive functions at once. The increased resources available to VMs allow them to abstract, split, duplicate, and em</p>
+           </div>
+           <div class="col-12">
+               <h2>Which one should I Use</h2>
+               <p>That depends—do you need a small instance of something that can be moved easily (containers), or do you need a semi-permanent allocation of custom IT resources?</p>
+               <p>The small, lightweight nature of containers allows them to be moved easily across bare metal systems as well as public, private, hybrid, and multicloud environments. They’re also the ideal environment to deploy today’s cloud-native apps, which are collections of microservices designed to provide a consistent development and automated  management experience across public, private, hybrid, and multicloud environments. Cloud-native apps help speed up how new apps are built, how existing ones are optimized, how they’re all connected. The caveat is that containers have to be compatible with the underlying OS. Compared to VMs, containers are best used to: </p>
+               <ul>
+                   <li>Build cloud-native apps</li>
+                   <li>Package microservices</li>
+                   <li>Instill DevOps or CI/CD practices</li>
+                   <li>Move scalable IT projects across a diverse IT footprint that shares the same OS</li>
+               </ul>
+               <p>VMs are capable of running far more operations than a single container, which is why they are the traditional way monolothic workloads have been (and are still today) packaged. But that expanded functionality makes VMs far less portable because of their dependence on the OS, application, and libraries. Compared to containers, VMs are best used to:</p>
+               <ul>
+                   <li>House traditional, legacy, and monolothic workloads</li>
+                   <li>Isolate risky development cycles</li>
+                   <li>Provision infrastructural resources (such as networks, servers, and data)</li>
+                   <li>Run a different OS inside another OS (such as running Unix on Linux)</li>
+               </ul>
+           </div>
+           <div class="col-12"></div>
+       </div>
+    </div>
 
 
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2>References</h2>
+            </div>
+            <div class="col-12">
+                <ul>
+                    <li><a href="https://www.ibm.com/cloud/blog/containers-vs-vms">Containers vs VM's: Whats the difference | IBM</a></li>
+                    <li><a href="https://www.redhat.com/en/topics/containers/containers-vs-vms">Containers vs VMs | Red Hat</a></li>
+                </ul>
+            </div>
         </div>
     </div>
 
