@@ -57,9 +57,80 @@
         </nav>
     </div>
 
-    <div class="container">
+    <div class="container pb-5">
+        <div class="row pt-3 pb-3 px-4">
+        </div>
+    </div>
+    <div class="container-fluid text-center">
+        <h3>A tutorial on how to setup a web server on your local computer using docker</h3>
+        <p class="lead">Steps to follow</p>
+
+        <p>
+            Step1: Make a folder on desktop name Docker or anything to your preference.
+        </p>
+        <p>
+            Step2: Open Docker and create simple code for PHP application "Hello World" with Echo.
+        </p>
+        <p>
+            Step3: Save that in a folder called "src" as source and we will name the file index.php
+        </p>
+        <div class="row justify-content-center">
+            <div class="col-sm-4">
+                <img class="img-responsive img-thumbnail" src="img/step2img.png" alt="step image">
+            </div>
+        </div>
+
+
+        <p>
+            Step4: create a new file name 'Dockerfile' so we can host on the web server, next to the src folder not inside.
+        </p>
+        <p>
+            step5: type exactly what in the image below in order to get official php and run commands with it.
+        </p>
+
+
+        <div class="row justify-content-center">
+            <div class="col-sm-4">
+                <img class="img-responsive img-thumbnail" src="img/tutimg2.png" alt="step image">
+            </div>
+        </div>
+        <p>
+            Step6:Open terminal or command line, insert docker build -t hello-world if current directory put . if not then
+            put the directory name
+        </p>
+        <div class="row justify-content-center">
+            <div class="col-sm-4">
+                <img class="img-responsive img-thumbnail" src="img/tutimg3.png" alt="step image">
+            </div>
+        </div>
+        <p>
+            Step7: Run the image by typing docker run -p 80:80 hello-world
+        </p>
+        <div class="row justify-content-center">
+            <div class="col-sm-4">
+                <img class="img-responsive img-thumbnail" src="img/tutimg4.png" alt="step image">
+            </div>
+        </div>
+        <p>
+            Step8:Open Google Chrome and type in localhost and you will see "Hello World". See image below for reference.
+        </p>
+        <div class="row justify-content-center">
+            <div class="col-sm-4">
+                <img class="img-responsive img-thumbnail" src="img/tutimg5.png" alt="step image">
+            </div>
+        </div>
+        <p> Step9:Hit Control C to stop the container</p>
+        <p>step10:To mount a volume, type docker run -p -v /User/Name/Desktop/docker/src/:/var/www/html/ hello-world, now
+            you can make changes in the local and they will reflect on web server </p>
+        <div class="row justify-content-center">
+            <div class="col-sm-4">
+                <img class="img-responsive img-thumbnail" src="img/tutimg6.png" alt="step image">
+            </div>
+        </div>
+        <p>Congratulations, you have learned how to host a container on a web server!</p>
 
     </div>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
