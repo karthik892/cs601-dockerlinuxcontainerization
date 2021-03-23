@@ -56,8 +56,82 @@
         </div>
     </nav>
 </div>
+<div class="container-fluid text-center">
+    <h3>A tutorial about how to connect Docker with Pycharm to write python code.</h3>
+    <p class="lead">Steps to follow</p>
 
-<div class="container">
+    <p>
+        Step1: Create a new project on Pycharm, choose a name of your preference.
+    </p>
+    <p>
+        Step2: Add a gitignore file and write .idea and venv.
+    </p>
+
+    <div class="row justify-content-center">
+        <div class="col-sm-4">
+            <img class="img-responsive img-thumbnail" src="img/step%201.png" alt="step image">
+        </div>
+    </div>
+
+
+    <p>
+        Step3: create a new file name 'Dockerfile', next to the src folder not inside.
+    </p>
+    <p>
+        step4: type exactly what in the image below.
+    </p>
+
+
+    <div class="row justify-content-center">
+        <div class="col-sm-4">
+            <img class="img-responsive img-thumbnail" src="img/step 2.png" alt="step image">
+        </div>
+    </div>
+    <p>
+        Step5:Open preference of pycharm, select build>Docker, this will make sure that docker is running and is successfully connect to pycharm. Click ok.
+    </p>
+    <div class="row justify-content-center">
+        <div class="col-sm-4">
+            <img class="img-responsive img-thumbnail" src="img/step 3.png" alt="step image">
+        </div>
+    </div>
+    <p>
+        Step6: Click on Add configuration on top right corner. Click the "+" and select Docker.
+    </p>
+    <p>
+        Enter the name as "Barcode" and click the dropdown in dockerfile field and select Dockerfile.
+        </p>
+    <p>
+        Finally give the same name as "Barcode" tp the Image Tag.
+    </p>
+    <div class="row justify-content-center">
+        <div class="col-sm-4">
+            <img class="img-responsive img-thumbnail" src="img/step 4.png" alt="step image">
+        </div>
+    </div>
+    <p>
+        Step7:Click green play sign on the top right corner and run the Dockerfile. It should look like the image below
+    </p>
+    <div class="row justify-content-center">
+        <div class="col-sm-4">
+            <img class="img-responsive img-thumbnail" src="img/step 5.png" alt="step image">
+        </div>
+    </div>
+    <p> Step8:We need to add the interpreter</p>
+    <p>Click on th project interpreter on the bottom left corner, to add Interpreter</p>
+    <div class="row justify-content-center">
+        <div class="col-sm-4">
+            <img class="img-responsive img-thumbnail" src="img/step 6.png" alt="step image">
+        </div>
+    </div>
+    <p>Step9: Click on Docker and wait for it load the libraries, then Click "Apply" and click "ok"</p>
+    <div class="row justify-content-center">
+        <div class="col-sm-4">
+            <img class="img-responsive img-thumbnail" src="img/step 7.png" alt="step image">
+        </div>
+    </div>
+    <p> Congratulations Ypu have now learn how to connect Pycharm with Docker.
+    </p>
 
 </div>
 
